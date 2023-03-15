@@ -432,10 +432,10 @@ function Library:create(options)
 	end
 
 	options = self:set_defaults({
-		Name = "Mercury",
+		Name = "Adderall",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://github.com/deeeity/mercury-lib"
+		Link = "adderall/"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
@@ -798,16 +798,16 @@ function Library:create(options)
 		TextXAlignment = Enum.TextXAlignment.Left
 	})
 
-	local timeDisplay = profile:object("TextLabel", {
-		BackgroundTransparency = 1,
-		Position = UDim2.new(0, 105, 1, -10),
-		Size = UDim2.new(0, 400,0, 20),
-		AnchorPoint = Vector2.new(0, 1),
-		Theme = {TextColor3 = {"WeakText", -20}},
-		TextScaled = true,
-		TextXAlignment = Enum.TextXAlignment.Left,
-		Text = tostring(os.date("%X")):sub(1, os.date("%X"):len()-3)
-	})
+	-- local timeDisplay = profile:object("TextLabel", {
+	-- 	BackgroundTransparency = 1,
+	-- 	Position = UDim2.new(0, 105, 1, -10),
+	-- 	Size = UDim2.new(0, 400,0, 20),
+	-- 	AnchorPoint = Vector2.new(0, 1),
+	-- 	Theme = {TextColor3 = {"WeakText", -20}},
+	-- 	TextScaled = true,
+	-- 	TextXAlignment = Enum.TextXAlignment.Left,
+	-- 	Text = tostring(os.date("%X")):sub(1, os.date("%X"):len()-3)
+	-- })
 
 	do
 		local desiredInterval = 1
